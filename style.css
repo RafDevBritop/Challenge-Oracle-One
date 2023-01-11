@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+:root{
+    --corprincipal: #382812;
+    --corsecundaria: #c2c2c2;
+    --cortitulo: #4d3a32;
+}
+
+body {
+   background: var(--corsecundaria);
+  /*background: linear-gradient(#c2c2c2, #4d3a32);*/
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    padding-right: 5%;
+}
+
+.cabecalho h1 {
+    color: var(--cortitulo);
+    font-size: 250%;
+ }
+
+.cabecalho img {
+    max-width: 200px;
+    max-height: 200px;
+    height: auto;
+    width: auto;
+}
+
+.hack {
+    border-radius: 180px;
+    opacity: 0.5;
+    margin-left: 10%;
+}
+
+.hack:hover {
+    transition: 400ms;
+    opacity: 1;
+}
+
+.container-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+.container-input .input {
+    width: 50%;
+    height: 50%;
+}
+
+#input-texto, #output-texto {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: var(--cortitulo);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 2%;
+    text-transform: uppercase;
+}
+
+#output{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--cortitulo);
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    margin-right: 5%;
+    padding: 5%;
+}
+
+#output h2 {
+    text-align: center;
+    font-size: 100%;
+    color: var(--cortitulo);
+}
+
+#output span {
+    font-size: 75%;
+    text-align: center;
+    margin-top: 130px;
+}
+
+#output img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+    height: 80%;
+}
+
+.container-bnt button {
+    border: 2px solid var(--cortitulo);
+    border-radius: 10px;
+    text-decoration: none;
+    background: fixed;
+    color: #3b220a;
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    margin-top: 45px;
+    cursor: pointer;
+    position: relative;
+    top: -100px;
+}
+
+.btn-copiar {
+    border: 2px solid var(--cortitulo);
+    background: var(--corsecundaria);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #3b220a;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+.btn-copiar:hover {
+    border: 2px solid var(--cortitulo);
+    transition: 0.5s all;
+    transform: scale(1.2);
+    background: #7c7c7c;
+    font-weight: bold;
+}
+
+.btn-copiar:active {
+    color:#000000;
+    border-color: #000000;
+    font-weight: bold;
+}
+
+.container-bnt button:hover {
+    border: 2px solid var(--cortitulo);
+    transition: 0.5s all;
+    transform: scale(1.2);
+    background: #7c7c7c;
+    font-weight: bold;
+}
+
+.container-bnt button:active {
+    color:#000000;
+    border-color: #000000;
+    font-weight: bold;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 6%;
+    background: linear-gradient(#382812, #7e5e52);
+    color: var(--corsecundaria);
+}
+
+.rodape p {
+    font-size: 100%;
+}
+
+.icons ion-icon {
+    width: 25px;
+    height: 25px;
+    color: var(--corsecundaria);
+}
+
+.icons ion-icon:hover {
+    transition: 0.5s all;
+    transform: scale(1.3);
+    color: var(--corsecundaria);
+}
+
+@media(max-width:480px) {
+    .container-bnt button {
+        top: -200px;
+    }
+    #output {
+        width: 300px;
+        height: 200px;
+    }
+    .btn-copiar {
+        position: relative;
+        right: 50px
+    }
+    .container-bnt button {
+        top: 20px;
+    }
+
+}
+@media(max-width:480px) {
+    .container-input {
+        display: inline-block;
+    }
+    #output {
+        margin-top: 2%;
+    }
+    .container-bnt button {
+        top: 20px;
+    }
+    .cabecalho {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:375px) {
+    .container-input {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

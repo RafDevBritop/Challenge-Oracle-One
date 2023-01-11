@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/hacker.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Codificador e Decodificador</title>
+</head>
+
+<body>
+
+    <main class="main-container">
+        <header class="cabecalho">
+            <div class="logos">
+                <img class="hack" src="imagens/hacker.png" alt="logo"></a>
+            </div>
+            <div class="titulo">
+                <h1>Codificando e Descodificando</h1>
+            </div>
+
+        </header>
+
+        <div class="container-input">
+            <div class="input">
+                <textarea id="input-texto" placeholder="Digite o seu texto aqui" style="resize: none"></textarea>
+                <p>ATENÇÃO: Apenas letras maiúsculas e sem acento.</p>
+            </div>
+            <div id="output">
+                <h2>Sua mensagem aparecerá aqui</h2>
+                <span>
+                    Digite um texto que deseja criptografar ou descriptografar.
+                </span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="container-bnt">
+                <button onclick="criptografar()" class="bnt-criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="bnt-descriptografar">Descriptografar</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/rafael-brito-dev/" target="_blank"><ion-icon
+                    name="logo-linkedin"></ion-icon></ion-icon></a>
+            <a href="https://github.com/RafDevBritop" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+        <p>&copy; Desenvolvido por Rafael Brito - 2023</p>
+    </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
