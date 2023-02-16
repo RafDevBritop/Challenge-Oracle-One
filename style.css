@@ -25,6 +25,10 @@ body {
     padding-right: 5%;
 }
 
+p {
+    margin: 5px 5px;
+}
+
 .cabecalho h1 {
     color: var(--cortitulo);
     font-size: 250%;
@@ -35,15 +39,11 @@ body {
     max-height: 200px;
     height: auto;
     width: auto;
-}
-
-.hack {
     border-radius: 180px;
     opacity: 0.5;
-    margin-left: 10%;
 }
 
-.hack:hover {
+.cabecalho img:hover {
     transition: 400ms;
     opacity: 1;
 }
@@ -184,24 +184,88 @@ body {
     color: var(--corsecundaria);
 }
 
-@media(max-width:480px) {
+
+/*Parte mobile*/
+
+
+@media screen and (max-width:768px) {
+
+    .cabecalho h1 {
+       margin-left: 240px;
+       margin-right: 10px;
+        
+     }
+}
+
+@media screen and (max-width:480px) {
+
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cabecalho img {
+        max-width: 150px;
+        max-height: 150px;
+        height: auto;
+        width: auto;
+       
+    }
+
+    .cabecalho h1 {
+       font-size: 25px;
+       margin-left: 0px;
+       margin-right: 0pxusus
+       ;
+    }
+ 
+
+    .container-bnt {
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+      margin-bottom: 5px;
+       
+    }
+            
     .container-bnt button {
         top: -200px;
+        margin: 10px 10px;
     }
+
+.bnt-criptografar button {
+    padding: 5px;
+}
+
+.bnt-descriptografar button {
+    padding-bottom: 5px;
+}
+
+#input-texto {
+    margin: 20px;
+}
     #output {
-        width: 300px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
+        padding-bottom: 5px;
+        align-items: center;
     }
+
+    #output span {
+        font-size: 75%;
+        text-align: center;
+        margin: 45px;
+    }
+    
     .btn-copiar {
         position: relative;
-        right: 50px
+        right: 11px
     }
     .container-bnt button {
         top: 20px;
     }
 
-}
-@media(max-width:480px) {
     .container-input {
         display: inline-block;
     }
@@ -215,12 +279,11 @@ body {
         justify-content: center;
         align-items: center;
     }
-}
-
-@media(max-width:375px) {
+    
     .container-input {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
+
 }
